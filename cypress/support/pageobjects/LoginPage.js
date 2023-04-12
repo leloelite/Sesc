@@ -12,7 +12,7 @@ class LoginPage {
 
     // Clica no botão que acessa a página de login do site
     clicarBotaoPaginaLogin() {
-        cy.get(loginElements.botaoLogin()).click()
+        cy.contains(loginElements.itemMenuEducacao()).click()
     }
 
     // Clica no botão de realizar login
@@ -32,7 +32,8 @@ class LoginPage {
 
     // Verifica se o botão tem o texto "Esqueceu sua senha?"
     visualizarBotaoRecuperarSenha() {
-        cy.get(loginElements.botaoRecuperarSenha()).should('contain', 'Esqueceu sua senha?')
+        cy.url().should('eq', 'https://portaldaeducacao.sescrio.org.br/')
+        //cy.contains(loginElements.itemMenuEducacao()).should('contain', 'Esqueceu sua senha?')
     }
 
     // Visualizar mensagem de erro "Usuário ou senha inválidos."

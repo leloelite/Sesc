@@ -11,11 +11,11 @@ And("informo {} incorreta", (senha) => {
     loginPage.informarSenha(senha);
 })
 
-Given("acesso o site CWI", () => {
+Given("acesso o site Sesc", () => {
     loginPage.acessarSite();
 })
 
-When("acesso a pagina de login", () => {
+When("acesso a pagina de Educacao", () => {
     loginPage.clicarBotaoPaginaLogin();
 })
 
@@ -23,7 +23,7 @@ When("clico no botão de realizar login", () => {
     loginPage.clicarBotaoRealizarLogin();
 })
 
-Then("devo visualizar botao de recuperar senha esquecida", () => {
+Then("devo ser redirecionado para o portal da educação", () => {
     loginPage.visualizarBotaoRecuperarSenha();
 })
 

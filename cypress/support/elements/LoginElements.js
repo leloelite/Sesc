@@ -1,7 +1,7 @@
 class LoginElements {
     botaoLogin = () => { return '.main-header-login-content .title' }
 
-    botaoRecuperarSenha = () => { return '.forgot' }
+    itemMenuEducacao = () => { return 'Educação' }
 
     botaoRealizarLogin = () => { return '[type="submit"]' }
 
